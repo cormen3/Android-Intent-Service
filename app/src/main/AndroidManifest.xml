@@ -17,8 +17,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".intentService.updateUiWithHandler.IntentServiceActivity">
+        </activity>
+
         <!--/ set exported to false : avoids other apps from using our service class-->
-        <service android:name=".MyReminderIntentService" android:exported="false"/>
+        <service android:name=".intentService.updateUiWithHandler.MyReminderIntentService" android:exported="false"/>
 
     </application>
 

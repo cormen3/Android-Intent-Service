@@ -1,11 +1,11 @@
-package hossein.gheisary.services
+package hossein.gheisary.services.intentService.updateUiWithHandler
 
 import android.app.IntentService
 import android.content.Intent
+import hossein.gheisary.services.intentService.RemindeTask
 
 class MyReminderIntentService:IntentService("MyReminderIntentService") {
     override fun onHandleIntent(intent: Intent?) {
-        var action = intent?.action
-        RemindeTask.executeTask(this, action)
+        RemindeTask.executeTask(this, intent!!)
     }
 }
